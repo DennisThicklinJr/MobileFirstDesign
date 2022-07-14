@@ -33,7 +33,7 @@
  body{
     background: var(--secondary);
     font-family: "Rubik", sans-serif;
-    overflow-x: hidden;
+   
  }
 
 .button{
