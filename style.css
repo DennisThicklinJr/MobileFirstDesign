@@ -1,0 +1,112 @@
+/* mobile first design  */
+ /* - code / design the mobile version first  */
+ /* - forces them (devs) to think about the UX and the essential features of the site.  */
+ /* - gradually add things as screen size scales up  */
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ /* selects the root element (the html element)  */
+ :root{
+    /* css variables  */
+    --primary: #ffc636;
+    --secondary: #0a0b5b;
+ }
+
+ html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+ }
+
+ body,
+ p,
+ a,
+ ul,
+ li{
+    text-decoration: none;
+    font-size: 1.6rem;
+ }
+
+ body{
+    background: var(--secondary);
+    font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
+ }
+
+.button{
+    background: none;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    display: inline-block;
+}
+
+.button:hover{
+    color: #222;
+    background: var(--primary);
+    cursor: pointer;
+}
+
+input,
+textarea{
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1rem 1.6rem;
+    border-radius: 20px;
+    border: 2px solid #9893d8;
+    color: #f2f2f2;
+}
+
+h1,
+h2,
+h3,
+h4{
+    color: #dddbff;
+    font-weight: normal;
+}
+
+p,
+a,
+li{
+    color: #9893d8;
+}
+
+h1, 
+h3{
+    font-size: 1.2em;
+}
+
+h4{
+    font-size: 1.1em;
+}
+
+.leading{
+    font-size: 1.1em;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1rem;
+}
+
+.site-nav{
+    margin: 0 2rem;
+}
+
+.site-nav ul{
+    display: none;
+}
+
+
+.site-nav h1{
+    grid-column: 1 / 4;
+    grid-row: 1;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--primary);
+}
